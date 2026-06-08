@@ -1,0 +1,41 @@
+/* Oculta os links inicialmente para permitir a animação de entrada do GSAP */
+.link-card {
+    opacity: 0;
+}
+
+/* Container do título para receber o efeito de glitch */
+.glitch-title {
+    position: relative;
+    display: inline-block;
+    will-change: transform, opacity;
+}
+
+/* Customizando o cursor gerado pelo Typed.js para manter o estilo terminal */
+.typed-cursor {
+    color: #00ff41;
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Estilo da barra de rolagem (opcional, para combinar com o terminal) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00ff41;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00cc33;
+}
